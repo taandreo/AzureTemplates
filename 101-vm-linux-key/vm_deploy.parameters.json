@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "vmName": {
+      "value": "Tokyo"
+    },
+    "adminUsername": {
+      "value": "tairan"
+    },
+    "adminKey": {
+      "value": "<KEY>"
+    },
+    "VmSize": {
+      "value": "Standard_B1ls"
+    },
+    "virtualNetworkName": {
+      "value": "<VNET>"
+    },
+    "subnetName": {
+      "value": "<SUBNET>"
+    },
+    "linuxImage":{
+      "value":{
+        "publisher": "OpenLogic",
+        "offer": "CentOS",
+        "sku": "8_1",
+        "version": "latest"
+      }
+    }
+  }
+}
